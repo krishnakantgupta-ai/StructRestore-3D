@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "structrestore-3d"
+version = "0.1.0a1"
+description = "Auditable self-supervised 2.5D FIB-SEM restoration research prototype"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+authors = [{name = "Krishna Kant Gupta", email = "krishnakant.gupta@bharatividyapeeth.edu"}]
+keywords = ["FIB-SEM", "electron microscopy", "self-supervised learning", "denoising"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+    "numpy>=1.24,<3",
+    "scipy>=1.10,<2",
+    "tifffile>=2023.7.10",
+    "scikit-image>=0.21,<1",
+    "matplotlib>=3.7,<4",
+    "torch>=2.2.2,<3",
+]
+
+[project.urls]
+Homepage = "https://github.com/krishnakantgupta-ai/StructRestore-3D"
+Repository = "https://github.com/krishnakantgupta-ai/StructRestore-3D"
+Issues = "https://github.com/krishnakantgupta-ai/StructRestore-3D/issues"
+
+[project.scripts]
+structrestore3d = "structrestore3d.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["structrestore3d*"]

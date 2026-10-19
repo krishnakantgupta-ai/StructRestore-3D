@@ -12,3 +12,7 @@ results/
 *.pth
 *.ckpt
 .env
+
+dist/
+build/
+*.egg-info/
