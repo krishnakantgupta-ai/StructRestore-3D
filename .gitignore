@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+data/
+models/
+results/
+*.tif
+*.tiff
+*.pt
+*.pth
+*.ckpt
+.env
