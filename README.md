@@ -53,3 +53,10 @@ Bharati Vidyapeeth (Deemed to be University), Pune, India
 ## Research Status
 
 Preliminary proof of concept. Further validation is ongoing.
+
+## Complete Tutorial
+
+For installation, model training, masking audits,
+benchmarking, registration analysis, and PyPI publication:
+
+[Read the StructRestore-3D Tutorial](docs/TUTORIAL.md)
